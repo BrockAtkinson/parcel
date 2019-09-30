@@ -1,19 +1,19 @@
-import assert from 'assert';
-import path from 'path';
-import {
+const assert = require('assert');
+const path = require('path');
+const {
   bundle,
   bundler,
   run,
   ncp,
   prepareBrowserContext,
-  inputFS as fs
-} from '@parcel/test-utils';
-import vm from 'vm';
-import {sleep} from '@parcel/test-utils';
-import WebSocket from 'ws';
-import json5 from 'json5';
-import sinon from 'sinon';
-import getPort from 'get-port';
+  inputFS: fs
+} = require('@parcel/test-utils');
+const vm = require('vm');
+const {sleep} = require('@parcel/test-utils');
+const WebSocket = require('ws');
+const json5 = require('json5');
+const sinon = require('sinon');
+const getPort = require('get-port');
 
 describe('hmr', function() {
   let stub;

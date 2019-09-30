@@ -1,15 +1,15 @@
-import assert from 'assert';
-import path from 'path';
-import os from 'os';
-import SourceMap from 'parcel-bundler/src/SourceMap';
-import {
+const assert = require('assert');
+const path = require('path');
+const os = require('os');
+const SourceMap = require('parcel-bundler/src/SourceMap');
+const {
   bundle,
   run,
   assertBundleTree,
   inputFS,
   outputFS
-} from '@parcel/test-utils';
-import {loadSourceMapUrl} from '@parcel/utils';
+} = require('@parcel/test-utils');
+const {loadSourceMapUrl} = require('@parcel/utils');
 
 function indexToLineCol(str, index) {
   let beforeIndex = str.slice(0, index);

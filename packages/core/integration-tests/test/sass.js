@@ -1,12 +1,12 @@
-import assert from 'assert';
-import path from 'path';
-import {
+const assert = require('assert');
+const path = require('path');
+const {
   bundle,
   run,
   assertBundles,
   distDir,
   outputFS
-} from '@parcel/test-utils';
+} = require('@parcel/test-utils');
 
 describe('sass', function() {
   it('should support requiring sass files', async function() {

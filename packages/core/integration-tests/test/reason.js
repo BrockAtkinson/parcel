@@ -1,6 +1,6 @@
-import assert from 'assert';
-import path from 'path';
-import {bundle, run} from '@parcel/test-utils';
+const assert = require('assert');
+const path = require('path');
+const {bundle, run} = require('@parcel/test-utils');
 
 describe.skip('reason', function() {
   it('should produce a bundle', async function() {

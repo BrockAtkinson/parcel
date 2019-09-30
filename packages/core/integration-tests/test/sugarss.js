@@ -1,6 +1,11 @@
-import assert from 'assert';
-import {bundle, assertBundles, outputFS, distDir} from '@parcel/test-utils';
-import path from 'path';
+const assert = require('assert');
+const {
+  bundle,
+  assertBundles,
+  outputFS,
+  distDir
+} = require('@parcel/test-utils');
+const path = require('path');
 
 describe('sugarss', function() {
   it('should correctly parse SugarSS asset', async function() {

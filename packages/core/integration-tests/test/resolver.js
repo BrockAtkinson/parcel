@@ -1,6 +1,6 @@
-import assert from 'assert';
-import path from 'path';
-import {bundle, run} from '@parcel/test-utils';
+const assert = require('assert');
+const path = require('path');
+const {bundle, run} = require('@parcel/test-utils');
 
 describe('resolver', function() {
   it('should support resolving tilde in monorepo packages', async function() {

@@ -1,6 +1,6 @@
-import assert from 'assert';
-import path from 'path';
-import {
+const assert = require('assert');
+const path = require('path');
+const {
   bundle,
   bundler,
   run,
@@ -9,8 +9,8 @@ import {
   distDir,
   outputFS,
   inputFS
-} from '@parcel/test-utils';
-import {makeDeferredWithPromise} from '@parcel/utils';
+} = require('@parcel/test-utils');
+const {makeDeferredWithPromise} = require('@parcel/utils');
 
 describe('javascript', function() {
   beforeEach(async () => {

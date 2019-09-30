@@ -1,13 +1,13 @@
-import assert from 'assert';
-import path from 'path';
-import {
+const assert = require('assert');
+const path = require('path');
+const {
   assertBundles,
   bundle,
   removeDistDirectory,
   run,
   outputFS,
   distDir
-} from '@parcel/test-utils';
+} = require('@parcel/test-utils');
 
 describe('fs', function() {
   afterEach(async () => {

@@ -1,11 +1,11 @@
-import assert from 'assert';
-import path from 'path';
-import {
-  bundle as _bundle,
+const assert = require('assert');
+const path = require('path');
+const {
+  bundle: _bundle,
   run,
   outputFS,
   assertBundles
-} from '@parcel/test-utils';
+} = require('@parcel/test-utils');
 
 const bundle = (name, opts = {}) =>
   _bundle(name, Object.assign({scopeHoist: true}, opts));

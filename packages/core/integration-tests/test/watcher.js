@@ -1,20 +1,20 @@
-import assert from 'assert';
-import nodeFS from 'fs';
-import path from 'path';
-import {
+const assert = require('assert');
+const nodeFS = require('fs');
+const path = require('path');
+const {
   bundler,
   getNextBuild,
   run,
   assertBundleTree,
   nextBundle,
   ncp,
-  inputFS as fs,
+  inputFS: fs,
   sleep,
   symlinkPrivilegeWarning,
   outputFS,
   overlayFS
-} from '@parcel/test-utils';
-import {symlinkSync} from 'fs';
+} = require('@parcel/test-utils');
+const {symlinkSync} = require('fs');
 
 const inputDir = path.join(__dirname, '/input');
 const distDir = path.join(inputDir, 'dist');

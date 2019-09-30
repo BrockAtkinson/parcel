@@ -1,5 +1,5 @@
-import assert from 'assert';
-import {
+const assert = require('assert');
+const {
   bundle,
   assertBundles,
   assertBundleTree,
@@ -8,8 +8,8 @@ import {
   run,
   inputFS,
   outputFS
-} from '@parcel/test-utils';
-import path from 'path';
+} = require('@parcel/test-utils');
+const path = require('path');
 
 describe('html', function() {
   beforeEach(async () => {

@@ -1,12 +1,12 @@
-import assert from 'assert';
-import sinon from 'sinon';
-import path from 'path';
-import {
+const assert = require('assert');
+const sinon = require('sinon');
+const path = require('path');
+const {
   assertBundleTree,
   bundle,
   bundler,
   nextBundle
-} from '@parcel/test-utils';
+} = require('@parcel/test-utils');
 
 describe.skip('bundler', function() {
   it('should bundle once before exporting middleware', async function() {

@@ -1,20 +1,20 @@
-import assert from 'assert';
-import path from 'path';
-import {
+const assert = require('assert');
+const path = require('path');
+const {
   bundle,
   bundler,
   getNextBuild,
   removeDistDirectory,
   run,
-  inputFS as fs,
+  inputFS: fs,
   outputFS,
   distDir,
   sleep
-} from '@parcel/test-utils';
-import os from 'os';
-import {spawnSync} from 'child_process';
-import {symlinkSync} from 'fs';
-import tempy from 'tempy';
+} = require('@parcel/test-utils');
+const os = require('os');
+const {spawnSync} = require('child_process');
+const {symlinkSync} = require('fs');
+const tempy = require('tempy');
 
 const parcelCli = require.resolve('parcel/src/bin.js');
 const inputDir = path.join(__dirname, '/input');
